@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- fontawesome link -->
+  <script src="https://kit.fontawesome.com/9200c11f6d.js" crossorigin="anonymous"></script>
+  <!-- google fonts link -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet"> 
+  <!-- stylesheet link -->
+  <link rel="stylesheet" href="style.css">
+  <title>Audio Player</title>
+</head>
+<body>
+<main>
+<section id="audio-container">
+  <div id="audio-player">
+    <div id="coverArt">
+      <img src="./assets/trackArt/kaytranada.png" alt="">
+    </div>
+    <div id="audio-info">
+      <p>Kaytranada</p>
+      <p>What You Need</p>
+    </div>
+    <div id="audio-buttons">
+      <button id="backward"><i class="fas fa-backward"></i></button>
+      <button id="play"><i class="fas fa-play"></i><i class="fas fa-pause"></i></button>
+      <button id="stop" ><i class="fas fa-stop"></i></button>
+      <button id="forward" ><i class="fas fa-forward"></i></button>
+    </div>
+    <div id="playlist">
+      <ul>
+        <li class="active song" data-src="./assets/audioFiles/kaytranadaWhatYouNeed.mp3" data-cover="./assets/trackArt/kaytranada.png" data-artist="Kaytranada" data-song="What You Need">Kaytranada - What You Need</li>
+        <li class="song" data-src="./assets/audioFiles/macMillerDang.mp3" data-cover="./assets/trackArt/macMiller.png" data-artist="Mac Miller" data-song="Dang!">Mac Miller - Dang!</li>
+        <li class="song" data-src="./assets/audioFiles/theInternetRollBurbankFunk.mp3" data-cover="./assets/trackArt/theInternet.png" data-artist="The Internet" data-song="Roll(Burbank Funk)">The Internet - Roll(Burbank Funk)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+<script src="script.js"></script>
+</body>
+</html>
